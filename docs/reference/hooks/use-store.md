@@ -26,7 +26,8 @@ const someState = useStore(store, selectorFn)
 ### Signature
 
 ```ts
-useStore<StoreApi<T>, U = T>(store: StoreApi<T>, selectorFn?: (state: T) => U) => UseBoundStore<StoreApi<T>>
+useStore<T>(store: StoreApi<T>): T
+useStore<T, U>(store: StoreApi<T>, selectorFn: (state: T) => U): U
 ```
 
 ## Reference
